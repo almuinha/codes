@@ -23,11 +23,11 @@ driver.get("https://gmail.com.br")
 login = driver.find_element_by_css_selector('#identifierId')
 login.send_keys('seu_email@gmail.com')
 driver.find_element_by_css_selector('#identifierNext > span > span').click()
+# é necessário utilizar o time.sleep, caso contrário, o código não será executado de maneira correta e vai travar nos pontos onde deveria ter o time.sleep
 time.sleep(4)
 senha = driver.find_element_by_css_selector('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input')
 senha.send_keys('sua_senha')
 driver.find_element_by_css_selector('#passwordNext > span > span').click()
-
 time.sleep(4)
 
 # escrevendo novo email
@@ -47,4 +47,3 @@ mensagem.send_keys('Testando robô em Python para enviar e-mails.')
 
 # enviando
 driver.find_element_by_id(':os').click()
-
