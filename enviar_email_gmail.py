@@ -42,7 +42,7 @@ assunto = driver.find_element_by_id(':p2')
 assunto.send_keys('Teste Robô Python')
 
 # mensagem
-mensagem = driver.find_element_by_css_selector('#\:q7 > br')
+mensagem = driver.find_element_by_css_selector('#\:q7 > br') # o > br indica que o texto de "mensagem" será inserido no espaço em branco (antes da assinatura, caso exista)
 mensagem.send_keys('Testando robô em Python para enviar e-mails.')
 
 # enviando
