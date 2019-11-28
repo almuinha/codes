@@ -82,8 +82,8 @@ time.sleep(3)
 wb = xlsxwriter.Workbook('LOCAL_DO_ARQUIVO/Coleta_de_tweets.xlsx')
 ws = wb.add_worksheet('Tweets')
 
-# colocando cabeçalho em negrito
-wb_format = wb.add_format({'bold': 1})
+# formatação para o cabeçalho
+wb_format = wb.add_format({'bold': 1, 'align': 'center'})
 
 # escrevendo títulos nas colunas
 ws.write('A1', 'Data', wb_format)
