@@ -17,7 +17,7 @@ from selenium.common.exceptions import NoSuchElementException
 #------------------------#
 
 # importar driver
-chromedriver = "LOCAL_DO_ARQUIVO/chromedriver"
+chromedriver = "C:/LOCAL_DO_ARQUIVO/chromedriver"
 capabilities = { 'chromeOptions':  { 'useAutomationExtension': False,
                                      'args': ['--disable-extensions'] }
               }
