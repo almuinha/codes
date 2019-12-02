@@ -20,13 +20,13 @@ import pyautogui
 #------------------------#
 
 #importar driver
-chromedriver = "LOCAL_DO_ARQUIVO_EM_SEU_COMPUTADOR/chromedriver"
+chromedriver = "C:/LOCAL_DO_ARQUIVO_EM_SEU_COMPUTADOR/chromedriver"
 capabilities = { 'chromeOptions':  { 'useAutomationExtension': False,
                                      'args': ['--disable-extensions'] }
                }
 driver = webdriver.Chrome(chromedriver, desired_capabilities = capabilities)
 
-# acessar o site do provedor de email
+# acessar o site desejado
 driver.get("https://twitter.com")
 
 #-----------------------------------------#
