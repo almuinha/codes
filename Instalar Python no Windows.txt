@@ -1,0 +1,40 @@
+#-----------------------------------------#
+# INSTALAÇÃO PYTHON (ANACONDA) NO WINDOWS #
+#-----------------------------------------#
+
+#-----------#
+# DOWNLOADS #
+#-----------#
+
+1. Download do Anaconda (https://www.anaconda.com/distribution/)
+
+2. Download do ChromeDriver, de acordo com a versão do navegador (https://chromedriver.chromium.org/downloads)
+
+#----------#
+# INSTALAR #
+#----------#
+
+1. Anaconda
+
+2. Bibliotecas iniciais
+	
+#------------------------------#	
+# PARA INSTALAR AS BIBLIOTECAS #
+#------------------------------#	
+
+1. Iniciar > Anaconda3 (64bit) > Anaconda Prompt
+
+2. Digite os comandos para instalação das bibliotecas, um por vez:
+
+	# pytesseract
+	conda install -c phygbu pytesseract
+
+	# pyautogui
+	conda install -c conda-forge pyautogui
+
+	# cv2
+	conda install -c anaconda py-opencv
+
+	# anticaptcha
+	pip install python-anticaptcha
+
