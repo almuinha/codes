@@ -1,0 +1,1 @@
+%fs ls '/dbfs/folder'
